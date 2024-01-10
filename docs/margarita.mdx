@@ -1,0 +1,68 @@
+import { Recipe } from '../src/components/recipe/Recipe'
+
+# Margarita
+
+<Recipe
+    ingredients={{
+        // teq: 1.5 oz silver tequila 
+        "tequila": {
+            value: 1.5,
+            unit: 'oz',
+            title: 'silver tequila',
+        },
+        // orange: 1 oz orange liqueur - Cointreu, Triple Sec, or Marner
+        "cointreu": {
+            value: 1,
+            unit: 'oz',
+            title: 'orange liqueur',
+            description: 'Cointreu, Triple Sec, or Marnier'
+        },
+        // limeJuice: .75 oz lime juice - freshly squeezed
+        "limeJuice": {
+            value: .75,
+            unit: 'oz',
+            title: 'lime juice',
+            description: 'freshly squeezed'
+        },
+        // simpleSyrup: .5 oz simple syrup - or to taste
+        "simpleSyrup": {
+            value: .5,
+            unit: 'oz',
+            title: 'simple syrup',
+            description: 'or to taste'
+        },
+        // ice: 1 cup ice
+        "ice": {
+            value: 1,
+            unit: 'cup',
+            title: 'ice',
+        },
+        // limeWedge: 1 ct lime wedge - for rimming the glass/garnish if desired
+        "limeWedge": {
+            value: 1,
+            unit: 'ct',
+            title: 'lime wedge',
+            description: 'for rimming the glass/garnish if desired'
+        },
+        // saltSugar: 1 oz course salt/sugar - for rimming the glass if desired
+        "coarseSaltSugar": {
+            value: 1,
+            unit: 'oz',
+            title: 'course salt/sugar',
+            description: 'for rimmming the glass if desired'
+        }
+    }}
+    instructions={[
+        'Rub line wedge around cup rim',
+        'Put cup rim in coarse salt/sugar',
+        'Combine tequila, cointreu, limeJuice, simpleSyrup into shaker',
+        'Fill shaker with ice',
+        'Shake for 20-30 seconds',
+        'Pour into cup while straining out ice (can leave some ice if desired)',
+        'Enjoy!'
+    ]}
+/>
+
+# Resources
+
+Recipe inspired by: https://www.gimmesomeoven.com/margarita-recipe/

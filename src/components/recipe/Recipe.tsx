@@ -1,4 +1,5 @@
 import { ChangeEvent, useState } from "react";
+import { replaceTokens } from "./replacement";
 
 type Ingredient = {
     value: number;
@@ -40,7 +41,14 @@ export function Recipe (props: Props) {
             <h2>Instructions</h2>
             <ol>
                 {instructions.map(i => {
-                    return <li>{i}</li>
+                    const a = replaceTokens(
+                        i,
+                        props.ingredients,
+                        {
+                            transformer: (a) => `${a.title} (${a.value*servings} ${a.unit})`
+                        }
+                    )
+                    return <li>{a}</li>
                 })}
             </ol>
         </div>

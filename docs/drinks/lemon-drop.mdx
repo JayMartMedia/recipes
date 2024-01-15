@@ -1,0 +1,54 @@
+import { Recipe } from '../../src/components/recipe/Recipe'
+
+# Lemon Drop
+
+<Recipe
+    ingredients={{
+        "vodka": {
+            value: 2,
+            unit: 'oz',
+            title: 'vodka',
+        },
+        "lemonJuice": {
+            value: 1,
+            unit: 'oz',
+            title: 'lemon juice',
+            description: 'freshly squeezed, typically 1/2-1 lemon for 1 oz of juice'
+        },
+        "syrup": {
+            value: 1,
+            unit: 'oz',
+            title: 'simple syrup',
+        },
+        "lemonSlice": {
+            value: 1,
+            unit: 'ct',
+            title: 'lemon slice',
+            description: 'for rimming the glass/garnish'
+        },
+        "sugar": {
+            value: 1,
+            unit: 'oz',
+            title: 'sugar',
+            description: 'for rimming the glass'
+        },
+        "ice": {
+            value: 1,
+            unit: 'cup',
+            title: 'ice',
+        },
+    }}
+    instructions={[
+        'Rub lemon wedge around cup rim',
+        'Put cup rim in sugar',
+        'Combine :vodka:, :lemonJuice:, :syrup: into shaker',
+        'Fill shaker with ice',
+        'Shake for 20-30 seconds',
+        'Pour into cup while straining out ice (can leave some ice if desired)',
+        'Enjoy!'
+    ]}
+/>
+
+# Resources
+
+Recipe inspired by: https://preppykitchen.com/lemon-drop-martini/

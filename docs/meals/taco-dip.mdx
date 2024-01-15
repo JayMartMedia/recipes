@@ -2,6 +2,8 @@ import { Recipe } from '../../src/components/recipe/Recipe'
 
 # Taco Dip
 
+Like tacos, but in a casserole dip!
+
 <Recipe
     ingredients={{
         "beef": {
@@ -23,6 +25,11 @@ import { Recipe } from '../../src/components/recipe/Recipe'
             value: 1,
             unit: 'cup',
             title: 'shredded cheddar cheese',
+        },
+        "chips": {
+            value: .5,
+            unit: 'bag(s)',
+            title: 'tortilla chips'
         }
     }}
     instructions={[
@@ -32,6 +39,7 @@ import { Recipe } from '../../src/components/recipe/Recipe'
         'Add :creamCheese: and stir until completely melted',
         'Pour into casserole dish',
         'Top with :cheese:',
-        'Bake at 350°F for 20 to 30 minutes (until cheese on top is crispy)'
+        'Bake at 350°F for 20 to 30 minutes (until cheese on top is crispy)',
+        'Enjoy by dipping with tortilla chips!'
     ]}
 />

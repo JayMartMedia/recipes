@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjaymartmedia=self.webpackChunkjaymartmedia||[]).push([[281],{826:e=>{e.exports=JSON.parse('{"title":"Meals","slug":"/category/meals","permalink":"/recipes/category/meals","navigation":{"previous":{"title":"Margarita","permalink":"/recipes/drinks/margarita"},"next":{"title":"Taco Dip","permalink":"/recipes/meals/taco-dip"}}}')}}]);

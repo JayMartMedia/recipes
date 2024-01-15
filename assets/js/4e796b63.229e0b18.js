@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjaymartmedia=self.webpackChunkjaymartmedia||[]).push([[99],{586:e=>{e.exports=JSON.parse('{"title":"Drinks","slug":"/category/drinks","permalink":"/recipes/category/drinks","navigation":{"previous":{"title":"Recipes","permalink":"/recipes/"},"next":{"title":"Lemon Drop","permalink":"/recipes/drinks/lemon-drop"}}}')}}]);

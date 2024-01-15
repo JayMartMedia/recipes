@@ -1,0 +1,37 @@
+import { Recipe } from '../../src/components/recipe/Recipe'
+
+# Taco Dip
+
+<Recipe
+    ingredients={{
+        "beef": {
+            value: 1,
+            unit: 'lb',
+            title: 'ground beef'
+        },
+        "seasoning": {
+            value: 1,
+            unit: 'ct',
+            title: 'taco seasoning packet'
+        },
+        "creamCheese": {
+            value: 16,
+            unit: 'oz',
+            title: 'cream cheese'
+        },
+        "cheese": {
+            value: 1,
+            unit: 'cup',
+            title: 'shredded cheddar cheese',
+        }
+    }}
+    instructions={[
+        'Brown :beef: and drain grease',
+        'Add :seasoning: and water according to directions on seasoning pack',
+        'Simmer 15 minutes or according to directions on seasoning pack',
+        'Add :creamCheese: and stir until completely melted',
+        'Pour into casserole dish',
+        'Top with :cheese:',
+        'Bake at 350°F for 20 to 30 minutes (until cheese on top is crispy)'
+    ]}
+/>

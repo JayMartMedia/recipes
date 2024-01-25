@@ -1,4 +1,5 @@
 import { ChangeEvent, useEffect, useState } from "react";
+import useIsBrowser from "@docusaurus/useIsBrowser";
 import { replaceTokens } from "./replacement";
 
 type Ingredient = {
@@ -17,9 +18,11 @@ type Props = {
 }
 
 export function Recipe (props: Props) {
-    const [batches, setBatches] = useState<number>(getInitialBatchCount);
+    const [batches, setBatches] = useState<number>(1);
+    const isBrowser = useIsBrowser();
     const ingredients = Object.entries(props.ingredients).map(([key,val]) => ({field: key, ...val}));
     const instructions = props.instructions;
+
 
     /**
      * Called whenever value in input field changes
@@ -30,10 +33,32 @@ export function Recipe (props: Props) {
     }
 
     /**
+     * 
+     */
+    useEffect(() => {
+        if(!isBrowser) return;
+    
+        let batchesToSet = 1;
+        const url = new URL(window.location.href)
+        const batchesQueryParam = url.searchParams.get('batches');
+        if(batchesQueryParam){
+            try{
+                const _batches = Number(batchesQueryParam);
+                batchesToSet = _batches;
+            }catch(e){
+                console.error('Batches should be a number', batchesQueryParam);
+            }
+        }
+        setBatches(batchesToSet);
+    }, [isBrowser]);
+
+    /**
      * When React batches state is changed,
      * push change to address bar
      */
     useEffect(() => {
+        if(!isBrowser) return;
+
         try{
             window.history.pushState(
                 {
@@ -86,8 +111,10 @@ export function Recipe (props: Props) {
  * 
  * @returns {number} the starting value for React batches state
  */
-function getInitialBatchCount (): number {
-    console.log('getting initial batches count')
+function useInitialBatchCount (): number {
+    const isBrowser = useIsBrowser();
+    if(!isBrowser) return 1;
+
     const url = new URL(window.location.href)
     const batchesQueryParam = url.searchParams.get('batches');
     if(batchesQueryParam){

@@ -1,16 +1,13 @@
-Skills and Interests
-- 💻 Experience in React, Next.js, Node.js, Angular, and TypeScript
-- 🌱 Currently learning C#/.NET, Kubernetes, and Kafka
-- 💡 Interested in Rust ( 🦀 ) and Go ( [<img src="./gopher.png" height="18">](#) )
+# JayMartMedia Recipes
 
-### [View Some of My Projects](./PROJECTS.md)
+## Site
 
-Some of the personal projects that I've recently worked on or am currently working on
+https://jaymartmedia.github.io/recipes/
 
-### [List of Helpful Commands I Forget Everyday](https://github.com/JayMartMedia/helpful-commands)
+## Goals
 
-Commands and keybinds for different software that I just can't seem to remember
-
-### [List of Resources I Have Found Helpful](https://github.com/JayMartMedia/helpful-resources)
-
-Quality articles, videos, and documentation that I have found helpful while learning various things or completing tasks
+There are 4 goals of this site:
+- Provide a place for me to put recipes so that I can easily find them from any device
+- Display recipes without a lot of junk getting in the way (other recipe sites have tons of ads)
+- Display amount of ingredients next to the name of the ingredient in the recipe instructions (to prevent having to constantly look between instructions and ingredient list)
+- Handle calculations for double/triple/etc. batches easily

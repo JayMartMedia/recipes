@@ -39,7 +39,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/jaymartmedia/jaymartmedia.github.io/tree/main',
+            'https://github.com/jaymartmedia/recipes/tree/main',
         },
         blog: false,
         theme: {
